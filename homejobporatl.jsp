@@ -70,17 +70,15 @@
             display: block;
         }
          .blur-background {
-           position:absolute;
-            top:0;
-            left:0;
+            position:absolute;
             width: 100%;
-            height: 75vh;
-            background-image:linear-gradient(rgba(173,216,230,0.6),rgba(172,216,230,0.6)), url('bg1.jpeg');
+            height: 45%;
+            background-image: url('bg1.jpeg');
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            filter: blur(80px);
-            z-index: -1;
+            filter: blur(8px); 
+            z-index: -1; 
         }
        
        .container.main-content {
@@ -115,7 +113,7 @@
         }
         .hidden-content {
       position: absolute;
-    top: 83%;
+    top: 50%;
     text-align:center;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.8);
@@ -199,12 +197,11 @@
             opacity: 1;
         }
         .details h2 {
-            margin: -17px;
-            font-size: 18px;
+            margin: 0;
+            font-size: 24px;
         }
         .details p {
-           font-size:12px;
-            margin: 15px ;
+            margin: 10px 0;
         }
         .benefits{
             text-align:center;
@@ -372,9 +369,7 @@ cb=googleTranslateElementInit">
      
     <div class="container main-content">
         <div class="tagline">CANDIDATES<br>ON<br>DEMAND</div>
-        <p class="description">Highlight the dedication of candidates to secure<br>
-            meaningful employment opportunities, despite facing<br> 
-            challenges or barriers.</p>
+        <p class="description">Highlight the dedication of candidates to secure meaningful employment opportunities, despite facing challenges or barriers.</p>
     <div class="discover-more">
     <a href="#" class="discover-link">Discover More <span class="arrow">&#9660;</span></a>
 </div>
@@ -402,6 +397,8 @@ Emphasis on Indian culture and thought characterized by simple living and khadi 
     });
 });
 </script>
+   
+   
  
    
 <h1 class="advantages"><u>ADVANTAGES OF WORKING WITH US</u></h1>
@@ -413,7 +410,7 @@ Emphasis on Indian culture and thought characterized by simple living and khadi 
     and the median pay provided was INR 2.73 LPA.</p>
 <div class="grid-container">
         <div class="grid-item">
-            <img src="Higher_Edu_1.png" alt="Image 1">
+            <img src="job1.jpeg" alt="Image 1">
             <div class="details">
                 <h2>Dedicated Service</h2>
                 <p><br>In-house Customer Success and Digital Advertising Team assigned to you

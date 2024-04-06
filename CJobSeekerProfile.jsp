@@ -1,9 +1,6 @@
-
-Copy code
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" import="java.sql.*, java.io.*" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" import="java.sql.*" %>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +9,6 @@ Copy code
         /* Your CSS styles here */
     </style>
 </head>
-
 <body>
     <div class="container">
         <h2>Create Job Seeker Profile</h2>
@@ -32,9 +28,10 @@ Copy code
             try {
                 // Validate email format
                 if (contact != null && !contact.isEmpty() && email != null && email.endsWith("@gmail.com")) {
+                    // Establish database connection
                     try (Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3305/beyondbias?zeroDateTimeBehavior=convertToNull", "root", "root@bv1");
                          PreparedStatement insertStmt = conn.prepareStatement("INSERT INTO jobseekerdata (name, age, dob, contact, email, address, skill, experience, qualification, shift) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)")) {
-                        
+
                         // Set parameters for the SQL query
                         insertStmt.setString(1, name);
                         insertStmt.setString(2, age);
@@ -66,20 +63,13 @@ Copy code
                             </script>
         <%
                         }
-                    } } catch (SQLException e) {
-    e.printStackTrace(); // Print stack trace for detailed error information
-    out.println("Error message: " + e.getMessage()); // Output the error message to the HTML page
-    // Optionally, log the error to a file or log database for further analysis
-    // You can use logging frameworks like Log4j or java.util.logging for this purpose
-    // Log.error("Error in database operation", e);
-%>
-    <script>
-        alert("Error in database operation. Please try again. Error message: <%= e.getMessage() %>");
-        window.location.href = "createprofileseeker.html"; // Go back to the previous page
-    </script>
-<%
-}
-
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+        %>
+                        <script>
+                            alert("Error in database operation. Please try again.");
+                            window.location.href = "createprofileseeker.html"; // Go back to the previous page
+                        </script>
         <%
                     }
                 } else {
@@ -101,5 +91,4 @@ Copy code
         %>
     </div>
 </body>
-
 </html>
