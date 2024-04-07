@@ -17,7 +17,7 @@ Server: Apache Tomcat
 
 Installation
 Clone the repository: git clone <https://github.com/VidhiTunwal/BeyondBias>
-Readme link:https: //vidhitunwal.github.io/BeyondBias/
+Readme link : [https://vidhitunwal.github.io/BeyondBias/]
 Set up the MySQL database and create schema using username and password and then create tables as per the requirements.
 Configure the database connection .
 Install MySQL connector jar file.
