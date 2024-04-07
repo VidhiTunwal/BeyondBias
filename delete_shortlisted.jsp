@@ -8,7 +8,7 @@
     
     String email = request.getParameter("email");
 
-    String url = "jdbc:mysql://localhost:3306/beyondbias";
+    String url = "jdbc:mysql://localhost:3305/beyondbias";
     String user = "root";
     String password = "root@bv1";
 

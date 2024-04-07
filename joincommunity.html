@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,11 +13,11 @@ and open the template in the editor.
 
         #logo {
             width: 120px;
-            
             display: block;
             margin: 0 auto;
         }
-     body {
+
+        body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
@@ -39,7 +33,7 @@ and open the template in the editor.
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        h1 {
+        h2 {
             color: #1e5783;
         }
 
@@ -64,48 +58,49 @@ and open the template in the editor.
             margin-bottom: 10px;
         }
 
-        .apply-link {
+        .join-btn {
             text-decoration: none;
-            color: #1e5783;
+            color: #fff;
             cursor: pointer;
             display: inline-block;
-            padding: 8px 12px;
-            background-color: #eee;
-            border: 1px solid #ddd;
+            padding: 10px 20px;
+            background-color: #3ea5d5;
+            border: none;
             border-radius: 4px;
+            transition: background-color 0.3s;
         }
 
-        .apply-link:hover {
-            background-color: #3ea5d5;
-            color: #fff;
+        .join-btn:hover {
+            background-color: #1e5783;
         }
-</style>
+
+        .back-btn {
+            text-decoration: none;
+            color: #0074D9;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+    </style>
 </head>
 <body>
     <header>
-    <div id="google_translate_element" align="left"></div>
- 
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement(
-                {pageLanguage: 'en'},
-                'google_translate_element'
-            );
-        }
-    </script>
- 
-    <script type="text/javascript"
-            src=
-"https://translate.google.com/translate_a/element.js?
-cb=googleTranslateElementInit">
-    </script>
-    <img id="logo" src="Banasthali_Vidyapeeth_Logo.png" alt="Logo">
-</header>
+        <div id="google_translate_element" align="left"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    {pageLanguage: 'en'},
+                    'google_translate_element'
+                );
+            }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <img id="logo" src="Banasthali_Vidyapeeth_Logo.png" alt="Logo">
+    </header>
     <div class="container">
         <h2>Join Community</h2>
-        <a href="https://qween.in/blog/women-empowerment/top-8-women-communities-that-every-woman-must-join/" style="text-decoration: none; color: #1e5783; display: block; margin-bottom: 10px;align-content: center"class="join-btn">Join Community</a><br><br>
-        <a href="jobseekerhome.jsp" style="text-decoration: none; color: #0074D9; display: block; margin-bottom: 10px;align-content: center"> Back to Home</a>
+        <a href="https://qween.in/blog/women-empowerment/top-8-women-communities-that-every-woman-must-join/" class="join-btn">Join Community</a>
+        <br><a href="jobseekerhome.jsp" class="back-btn"> Back to Home</a>
     </div>
-     
 </body>
 </html>

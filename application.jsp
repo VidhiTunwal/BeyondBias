@@ -58,7 +58,7 @@
             String email ="vidhitunwal1486@gmail.com"; 
 
             
-            String url = "jdbc:mysql://localhost:3306/beyondbias";
+            String url = "jdbc:mysql://localhost:3305/beyondbias";
             String user = "root";
             String password = "root@bv1";
 

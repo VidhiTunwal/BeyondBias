@@ -10,7 +10,7 @@
     String profileData = "{}"; 
     try {
         Class.forName("com.mysql.jdbc.Driver");
-        conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/beyondbias?zeroDateTimeBehavior=convertToNull", "root", "root@bv1");
+        conn = DriverManager.getConnection("jdbc:mysql://localhost:3305/beyondbias?zeroDateTimeBehavior=convertToNull", "root", "root@bv1");
 
         String query = "SELECT * FROM jobseekerdata WHERE id=?";
         stmt = conn.prepareStatement(query);
