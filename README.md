@@ -17,6 +17,7 @@ Database: MySQL
 Server: Apache Tomcat
 Browser: Google Chrome
 
+
 Installation
 Clone the repository: git clone <https://github.com/VidhiTunwal/BeyondBias>
 Readme link: [https://vidhitunwal.github.io/BeyondBias/]
